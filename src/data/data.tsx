@@ -11,7 +11,6 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
@@ -20,11 +19,6 @@ import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-//import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-//import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-//import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-//import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-//import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -358,39 +352,6 @@ export const education: TimelineItem[] = [
     date: 'May 1990',
     location: 'University of Madras, Chennai, India',
     title: 'B.E. Electronics and Communication',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const certification: TimelineItem[] = [
-  {
-    date: 'May 2024',
-    location: 'Coursera/Cloud BootCamp',
-    title: 'Cloud Computing Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'June 2024',
-    location: 'Coursera/Google',
-    title: 'Project Management Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'July 2024',
-    location: 'Coursera/IBM',
-    title: 'Data Engineering Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'Aug 2024',
-    location: 'Coursera/IBM',
-    title: 'Cyber Security Analyst Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'Sep 2024',
-    location: 'Coursera/IBM',
-    title: 'AI Engineering Professional Certificate',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
