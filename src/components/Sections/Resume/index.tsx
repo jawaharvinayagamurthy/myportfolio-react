@@ -1,6 +1,6 @@
 import {FC, memo} from 'react';
 
-import {education, experience, SectionId, skills} from '../../../data/data';
+import {education, certification, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
@@ -15,13 +15,21 @@ const Resume: FC = memo(() => {
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
+        <ResumeSection title="Certifications">
+          {certification.map((item, index) => (
+            <TimelineItem item={item} key={`${item.title}-${index}`} />
+          ))}
+        </ResumeSection>
         <ResumeSection title="Work">
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
         <ResumeSection title="Skills">
-          <p className="pb-8">Here you can show a snapshot of your skills to show off to employers</p>
+          <p className="pb-8">Each skill is rated on a scale from 1 to 10, where 1 indicates 
+              basic familiarity and 10 represents expert-level mastery. The ratings reflect 
+              both my hands-on experience and depth of knowledge in each area, ensuring a 
+              clear understanding of my capabilities.</p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />
