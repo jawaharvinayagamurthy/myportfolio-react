@@ -356,6 +356,39 @@ export const education: TimelineItem[] = [
   },
 ];
 
+export const certification: TimelineItem[] = [
+  {
+    date: 'May 2024',
+    location: 'Coursera/Cloud BootCamp',
+    title: 'Cloud Computing Professional Certificate',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'June 2024',
+    location: 'Coursera/Google',
+    title: 'Project Management Professional Certificate',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'July 2024',
+    location: 'Coursera/IBM',
+    title: 'Data Engineering Professional Certificate',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'Aug 2024',
+    location: 'Coursera/IBM',
+    title: 'Cyber Security Analyst Professional Certificate',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+  {
+    date: 'Sep 2024',
+    location: 'Coursera/IBM',
+    title: 'AI Engineering Professional Certificate',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+  },
+];
+
 export const experience: TimelineItem[] = [
   {
     date: 'Dec 2014 - Present',
