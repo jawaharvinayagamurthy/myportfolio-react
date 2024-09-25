@@ -369,24 +369,6 @@ export const certification: TimelineItem[] = [
     title: 'Project Management Professional Certificate',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
-  {
-    date: 'July 2024',
-    location: 'Coursera/IBM',
-    title: 'Data Engineering Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'Aug 2024',
-    location: 'Coursera/IBM',
-    title: 'Cyber Security Analyst Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'Sep 2024',
-    location: 'Coursera/IBM',
-    title: 'AI Engineering Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
 ];
 
 export const experience: TimelineItem[] = [
