@@ -346,28 +346,21 @@ export const education: TimelineItem[] = [
     date: 'Aug 1995',
     location: 'University of Texas at San Antonio, TX, USA',
     title: 'M.S. Electrical Engineering',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: (
+      <p>
+          Describe your experience at school, what you learned, what useful skills you have acquired etc.
+      </p>
+    ),
   },
   {
     date: 'May 1990',
     location: 'University of Madras, Chennai, India',
     title: 'B.E. Electronics and Communication',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const certification: TimelineItem[] = [
-  {
-    date: 'May 2024',
-    location: 'Coursera/Cloud BootCamp',
-    title: 'Cloud Computing Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'June 2024',
-    location: 'Coursera/Google',
-    title: 'Project Management Professional Certificate',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: (
+      <p>
+        Describe your experience at school, what you learned, what useful skills you have acquired etc.
+      </p>
+    ),
   },
 ];
 
@@ -423,7 +416,6 @@ export const testimonial: TestimonialSection = {
 /**
  * Contact section
  */
-
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description: 'Connect with me for collaboration, opportunities, or to discuss my work!',
