@@ -1,5 +1,5 @@
 // 1. React and core hooks/libraries
-import { memo, useEffect, useState } from 'react';
+import {memo, useEffect, useState} from 'react';
 
 // 2. Third-party libraries (sorted alphabetically)
 import {
