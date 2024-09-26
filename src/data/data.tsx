@@ -93,7 +93,7 @@ export const heroData: Hero = {
 /**
  * About section
  */
-export const AboutComponent = () => {
+export const AboutComponent = memo(() => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -126,8 +126,8 @@ export const AboutComponent = () => {
       </p>
     </>
   );
-};
-export default memo(AboutComponent); // Wrap AboutComponent in React.memo()
+});
+export default AboutComponent; 
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: <AboutComponent />, // Refer to the functional component to handle dynamic rendering
