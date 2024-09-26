@@ -7,7 +7,7 @@ import {
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
-import {useEffect, useState} from 'react';
+import {useEffect, useState, memo} from 'react';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
@@ -127,7 +127,7 @@ export const AboutComponent = () => {
     </>
   );
 };
-
+export default memo(AboutComponent); // Wrap AboutComponent in React.memo()
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: <AboutComponent />, // Refer to the functional component to handle dynamic rendering
