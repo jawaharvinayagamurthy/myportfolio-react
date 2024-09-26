@@ -21,10 +21,11 @@ const Resume: FC = memo(() => {
           ))}
         </ResumeSection>
         <ResumeSection title="Skills">
-          <p className="pb-8">Each skill is rated on a scale from 1 to 10, where 1 indicates 
-              basic familiarity and 10 represents expert-level mastery. The ratings reflect 
-              both my hands-on experience and depth of knowledge in each area, ensuring a 
-              clear understanding of my capabilities.</p>
+          <p className="pb-8">
+            Each skill is rated on a scale from 1 to 10, where 1 indicates basic familiarity and 10 represents
+            expert-level mastery. The ratings reflect both my hands-on experience and depth of knowledge in each area,
+            ensuring a clear understanding of my capabilities.
+          </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />

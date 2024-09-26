@@ -1,4 +1,4 @@
-import {FC, memo,} from 'react';
+import {FC, memo} from 'react';
 
 import {TimelineItem} from '../../../data/dataDef';
 
@@ -21,4 +21,3 @@ const Timeline: FC<{item: TimelineItem}> = memo(({item}) => {
 
 Timeline.displayName = 'TimelineItem';
 export default Timeline;
-

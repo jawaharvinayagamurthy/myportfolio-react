@@ -40,7 +40,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Portfolio of Jawahar Vinayagamurthy',
-  description: ("Innovative Engineer & Project Leader"),
+  description: 'Innovative Engineer & Project Leader',
 };
 
 /**
@@ -71,7 +71,7 @@ export const heroData: Hero = {
         <strong className="text-stone-100">Innovative Engineer & Project Leader </strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
-         "Engineering AI-driven automated solutions, data science, and machine learning to power the future.”
+        "Engineering AI-driven automated solutions, data science, and machine learning to power the future.”
       </p>
     </>
   ),
@@ -107,27 +107,25 @@ export const AboutComponent = memo(() => {
   return (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
-        As an <strong className="text-stone-100">SDET</strong>, I specialize in creating automated 
-        test frameworks, ensuring that software applications, firmware, and enterprise systems meet 
-        rigorous quality standards. My focus spans across functional, security, and performance testing,
-        where I integrate automation to streamline the testing process and improve efficiency. With a 
-        deep understanding of cybersecurity principles, I also ensure that products are not only 
-        functional but secure, safeguarding against vulnerabilities.
+        As an <strong className="text-stone-100">SDET</strong>, I specialize in creating automated test frameworks,
+        ensuring that software applications, firmware, and enterprise systems meet rigorous quality standards. My focus
+        spans across functional, security, and performance testing, where I integrate automation to streamline the
+        testing process and improve efficiency. With a deep understanding of cybersecurity principles, I also ensure
+        that products are not only functional but secure, safeguarding against vulnerabilities.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
-        In <strong className="text-stone-100">Project and Program Management</strong>,
-        I lead cross-functional teams to successfully deliver complex projects from initiation through 
-        execution, ensuring alignment between development, testing, and security. My leadership emphasizes 
-        efficient task delegation, resource management, and seamless coordination among stakeholders. With 
-        a strong blend of technical expertise and organizational skills, I consistently manage risks, 
-        timelines, and expectations to deliver secure, high-quality software solutions. By integrating 
-        strategic oversight with communication, I ensure that projects are completed on time, within budget, 
+        In <strong className="text-stone-100">Project and Program Management</strong>, I lead cross-functional teams to
+        successfully deliver complex projects from initiation through execution, ensuring alignment between development,
+        testing, and security. My leadership emphasizes efficient task delegation, resource management, and seamless
+        coordination among stakeholders. With a strong blend of technical expertise and organizational skills, I
+        consistently manage risks, timelines, and expectations to deliver secure, high-quality software solutions. By
+        integrating strategic oversight with communication, I ensure that projects are completed on time, within budget,
         and meet all technical and business requirements.
       </p>
     </>
   );
 });
-export default AboutComponent; 
+export default AboutComponent;
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: <AboutComponent />, // Refer to the functional component to handle dynamic rendering
@@ -354,28 +352,20 @@ export const portfolioItems: PortfolioItem[] = [
 ];
 
 /**
- * Resume section 
+ * Resume section
  */
 export const education: TimelineItem[] = [
   {
     date: 'Aug 1995',
     location: 'University of Texas at San Antonio, TX, USA',
     title: 'M.S. Electrical Engineering',
-    content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills you have acquired etc.
-      </p>
-    ),
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
     date: 'May 1990',
     location: 'University of Madras, Chennai, India',
     title: 'B.E. Electronics and Communication',
-    content: (
-      <p>
-        Describe your experience at school, what you learned, what useful skills you have acquired etc.
-      </p>
-    ),
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
