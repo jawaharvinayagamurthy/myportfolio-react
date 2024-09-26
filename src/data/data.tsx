@@ -7,6 +7,7 @@ import {
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
+import {useEffect, useState} from 'react';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
@@ -39,7 +40,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Portfolio of Jawahar Vinayagamurthy',
-  description: "Innovative Engineer & Project Leader",
+  description: ("Innovative Engineer & Project Leader"),
 };
 
 /**
@@ -92,17 +93,26 @@ export const heroData: Hero = {
 /**
  * About section
  */
-export const aboutData: About = {
-  profileImageSrc: profilepic,
-  description: (
+export const AboutComponent = () => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return null; // Skip rendering on the server to avoid hydration errors
+  }
+
+  return (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
         As an <strong className="text-stone-100">SDET</strong>, I specialize in creating automated 
         test frameworks, ensuring that software applications, firmware, and enterprise systems meet 
         rigorous quality standards. My focus spans across functional, security, and performance testing,
-         where I integrate automation to streamline the testing process and improve efficiency. With a 
-         deep understanding of cybersecurity principles, I also ensure that products are not only 
-         functional but secure, safeguarding against vulnerabilities.
+        where I integrate automation to streamline the testing process and improve efficiency. With a 
+        deep understanding of cybersecurity principles, I also ensure that products are not only 
+        functional but secure, safeguarding against vulnerabilities.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
         In <strong className="text-stone-100">Project and Program Management</strong>,
@@ -115,7 +125,12 @@ export const aboutData: About = {
         and meet all technical and business requirements.
       </p>
     </>
-  ),
+  );
+};
+
+export const aboutData: About = {
+  profileImageSrc: profilepic,
+  description: <AboutComponent />, // Refer to the functional component to handle dynamic rendering
   aboutItems: [
     {label: 'Location', text: 'Mountain House, CA, USA', Icon: MapIcon},
     {label: 'Experience', text: '25 years', Icon: CalendarIcon},
@@ -348,7 +363,7 @@ export const education: TimelineItem[] = [
     title: 'M.S. Electrical Engineering',
     content: (
       <p>
-          Describe your experience at school, what you learned, what useful skills you have acquired etc.
+        Describe your experience at school, what you learned, what useful skills you have acquired etc.
       </p>
     ),
   },
