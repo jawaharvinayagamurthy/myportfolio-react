@@ -1,3 +1,5 @@
+import {useEffect, useState, memo} from 'react';
+
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
@@ -7,7 +9,6 @@ import {
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
-import {useEffect, useState, memo} from 'react';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
