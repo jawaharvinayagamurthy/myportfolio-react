@@ -1,5 +1,7 @@
-import {useEffect, useState, memo} from 'react';
+// 1. React and core hooks/libraries
+import { memo, useEffect, useState } from 'react';
 
+// 2. Third-party libraries (sorted alphabetically)
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
@@ -10,10 +12,13 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+// 3. Custom components (sorted alphabetically)
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
+
+// 4. Images (sorted alphabetically)
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -23,6 +28,8 @@ import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
+
+// 5. Data definitions and types (sorted alphabetically)
 import {
   About,
   ContactSection,
