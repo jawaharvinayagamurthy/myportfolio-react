@@ -19,6 +19,7 @@
     "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
     "ts-pattern": "^5.0.4"
   },
   "devDependencies": {
@@ -27,6 +28,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.18",
+    "@types/react-modal": "^3",
     "@types/tailwindcss": "^3.1.0",
     "@types/webpack-env": "^1.18.1",
     "@typescript-eslint/eslint-plugin": "^6.2.1",

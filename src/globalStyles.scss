@@ -49,3 +49,49 @@ th {
 th {
   font-weight: 600;
 }
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it appears above other content */
+  margin: auto; /* Center modal */
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75); /* Semi-transparent overlay */
+  z-index: 999; /* Behind the modal */
+}
+
+.absolute {
+  padding: 10px; /* Add padding to the overlay */
+}
+
+.bg-black {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+.hover\:bg-opacity-75:hover {
+  background-opacity: 0.75; /* Adjust hover effect for visibility */
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  border-radius: 0.5rem; /* Rounded corners for images */
+}

@@ -323,39 +323,33 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Recent Work',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: porfolioImage1,
+    description: 'This is a description of the recent work.'
   },
   {
     title: 'Gaming and Internet Services',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: porfolioImage2,
+    description: 'This is a description of the recent work.'
   },
   {
     title: 'Router Development and Testing',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: porfolioImage3,
+    description: 'This is a description of the recent work.'
   },
   {
     title: 'Central Office Engineering and CDMA Network',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: porfolioImage4,
+    description: 'This is a description of the recent work.'
   },
   {
     title: 'Network Management and VoIP System and Applications',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: porfolioImage5,
+    description: 'This is a description of the recent work.'
   },
   {
     title: 'Voicemail Management and Network Protocols',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
     image: porfolioImage6,
+    description: 'This is a description of the recent work.'
   },
 ];
 
