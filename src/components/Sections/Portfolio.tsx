@@ -30,6 +30,10 @@ const Portfolio: FC = memo(() => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
+
+            // Wrap openModal call in useCallback
+            const handleOpenModal = useCallback(() => openModal(item), [item]);
+
             return (
               <div className="relative" key={`${title}-${index}`}>
                 <div
@@ -38,7 +42,7 @@ const Portfolio: FC = memo(() => {
                   )}
                 >
                   <Image alt={title} layout="fill" objectFit="cover" src={image} />
-                  <ItemOverlay item={item} openModal={() => openModal(item)} title={title} />
+                  <ItemOverlay item={item} openModal={handleOpenModal} title={title} />
                 </div>
               </div>
             );
@@ -48,7 +52,7 @@ const Portfolio: FC = memo(() => {
           <PortfolioModal
             isOpen={isModalOpen}
             item={currentItem}
-            onClose={closeModal} // Sorted alphabetically
+            onClose={closeModal}
           />
         )}
       </div>
