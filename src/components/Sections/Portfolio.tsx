@@ -1,11 +1,11 @@
 // Portfolio.tsx
-import React, { FC, memo, useState } from 'react';
+import React, {FC, memo, useState} from 'react';
 import Image from 'next/image';
-import { portfolioItems as initialPortfolioItems, SectionId } from '../../data/data';
+import {portfolioItems as initialPortfolioItems, SectionId} from '../../data/data';
 import Section from '../Layout/Section';
 import PortfolioModal from './PortfolioModal';
 import ItemOverlay from './ItemOverlay';
-import { PortfolioItem } from '../../data/dataDef';
+import {PortfolioItem} from '../../data/dataDef';
 
 const Portfolio: FC = memo(() => {
   const [portfolioItems] = useState<PortfolioItem[]>(initialPortfolioItems);

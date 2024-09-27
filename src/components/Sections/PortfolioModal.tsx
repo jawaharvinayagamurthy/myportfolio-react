@@ -1,7 +1,7 @@
 // PortfolioModal.tsx
 import React from 'react';
 import Modal from 'react-modal';
-import { PortfolioItem } from '../../data/dataDef';
+import {PortfolioItem} from '../../data/dataDef';
 
 interface PortfolioModalProps {
   isOpen: boolean;
@@ -9,8 +9,8 @@ interface PortfolioModalProps {
   item: PortfolioItem;
 }
 
-const PortfolioModal: React.FC<PortfolioModalProps> = ({ isOpen, onClose, item }) => {
-  const { title, description } = item;
+const PortfolioModal: React.FC<PortfolioModalProps> = ({isOpen, onClose, item}) => {
+  const {title, description} = item;
 
   return (
     <Modal

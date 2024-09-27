@@ -1,3 +1,4 @@
+// dataDef.ts
 import {StaticImageData} from 'next/image';
 import {FC, ForwardRefExoticComponent, SVGProps} from 'react';
 
