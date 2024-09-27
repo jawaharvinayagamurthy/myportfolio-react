@@ -25,6 +25,11 @@ const Portfolio: FC = memo(() => {
     setCurrentItem(null);
   }, []);
 
+  // Wrap the openModal call in a useCallback
+  const handleOpenModal = useCallback((item: PortfolioItem) => {
+    openModal(item);
+  }, [openModal]);
+
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
@@ -43,7 +48,7 @@ const Portfolio: FC = memo(() => {
                   <Image alt={title} layout="fill" objectFit="cover" src={image} />
                   <ItemOverlay
                     item={item}
-                    openModal={() => openModal(item)} // Pass item directly here
+                    openModal={() => handleOpenModal(item)} // Use handleOpenModal
                     title={title}
                   />
                 </div>
