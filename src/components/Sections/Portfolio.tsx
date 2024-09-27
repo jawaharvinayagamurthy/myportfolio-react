@@ -23,6 +23,11 @@ const Portfolio: FC = memo(() => {
     setCurrentItem(null);
   }, []);
 
+  // Move this outside of the map function
+  const handleOpenModal = useCallback((item: PortfolioItem) => {
+    openModal(item);
+  }, [openModal]);
+
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
@@ -30,9 +35,6 @@ const Portfolio: FC = memo(() => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
-
-            // Wrap openModal call in useCallback
-            const handleOpenModal = useCallback(() => openModal(item), [item]);
 
             return (
               <div className="relative" key={`${title}-${index}`}>
@@ -42,7 +44,11 @@ const Portfolio: FC = memo(() => {
                   )}
                 >
                   <Image alt={title} layout="fill" objectFit="cover" src={image} />
-                  <ItemOverlay item={item} openModal={handleOpenModal} title={title} />
+                  <ItemOverlay 
+                    item={item} 
+                    openModal={() => handleOpenModal(item)} // Use the stable function here
+                    title={title} 
+                  />
                 </div>
               </div>
             );
@@ -62,6 +68,6 @@ const Portfolio: FC = memo(() => {
 
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
-
 //<ItemOverlay item={item} openModal={() => openModal(item)} title={title} /> {/* Pass the title as well */}
+
 
