@@ -33,11 +33,6 @@ const Portfolio: FC = memo(() => {
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
 
-            // Wrap the openModal call in useCallback here
-            const handleOpenModal = useCallback(() => {
-              openModal(item);
-            }, [openModal, item]);
-
             return (
               <div className="relative" key={`${title}-${index}`}>
                 <div
@@ -46,10 +41,10 @@ const Portfolio: FC = memo(() => {
                   )}
                 >
                   <Image alt={title} layout="fill" objectFit="cover" src={image} />
-                  <ItemOverlay 
-                    item={item} 
-                    openModal={handleOpenModal} // Use the stable function here
-                    title={title} 
+                  <ItemOverlay
+                    item={item}
+                    openModal={() => openModal(item)} // Pass item directly here
+                    title={title}
                   />
                 </div>
               </div>
