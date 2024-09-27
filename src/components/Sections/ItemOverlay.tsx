@@ -1,5 +1,5 @@
 // ItemOverlay.tsx
-import React from 'react';
+import React, {FC, memo} from 'react';
 import {PortfolioItem} from '../../data/dataDef';
 
 interface ItemOverlayProps {
@@ -8,7 +8,7 @@ interface ItemOverlayProps {
   title: string; // Add title prop
 }
 
-const ItemOverlay: React.FC<ItemOverlayProps> = ({openModal, title}) => {
+const ItemOverlay: FC<ItemOverlayProps> = memo(({openModal, title}) => {
   return (
     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 hover:bg-opacity-75 transition-opacity p-4">
       <h3 className="text-white font-semibold mb-2 text-center">{title}</h3> {/* Display title */}
@@ -17,7 +17,7 @@ const ItemOverlay: React.FC<ItemOverlayProps> = ({openModal, title}) => {
       </button>
     </div>
   );
-};
+});
 
 export default ItemOverlay;
 

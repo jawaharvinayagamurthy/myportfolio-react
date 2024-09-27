@@ -28,7 +28,7 @@ const Portfolio: FC = memo(() => {
         <h2 className="self-center text-xl font-bold text-white">Explore my project work</h2>
         <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {portfolioItems.map((item, index) => {
-            const { title, image } = item;
+            const {title, image} = item;
             return (
               <div className="relative" key={`${title}-${index}`}>
                 <Image
