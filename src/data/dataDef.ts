@@ -80,7 +80,7 @@ export interface SkillGroup {
 export interface PortfolioItem {
   title: string;
   image: string | StaticImageData;
-  description: string;
+  description: JSX.Element;
 }
 
 /**

@@ -44,6 +44,16 @@ import {
   TimelineItem,
 } from './dataDef';
 
+// 6. Project work
+import {
+  RecentWork, 
+  GamingandInternetServices,
+  RouterandNetworkProtocols,
+  COEandCDMANetwork,
+  NetworkManagementandVoIP,
+  VoicemailManagementandNetwork
+} from '../components/Sections/ProjectWork'; 
+
 /**
  * Page meta data
  */
@@ -108,11 +118,9 @@ export const AboutComponent = memo(() => {
   useEffect(() => {
     setIsClient(true);
   }, []);
-
   if (!isClient) {
     return null; // Skip rendering on the server to avoid hydration errors
   }
-
   return (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
@@ -325,32 +333,32 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Recent Work',
     image: porfolioImage1,
-    description: 'This is a description of the recent work.'
+    description: <RecentWork />
   },
   {
     title: 'Gaming and Internet Services',
     image: porfolioImage2,
-    description: 'This is a description of the recent work.'
+    description:<GamingandInternetServices />
   },
   {
-    title: 'Router Development and Testing',
+    title: 'Router and Network Protocols',
     image: porfolioImage3,
-    description: 'This is a description of the recent work.'
+    description: <RouterandNetworkProtocols/>
   },
   {
     title: 'Central Office Engineering and CDMA Network',
     image: porfolioImage4,
-    description: 'This is a description of the recent work.'
+    description: <COEandCDMANetwork/>
   },
   {
     title: 'Network Management and VoIP System and Applications',
     image: porfolioImage5,
-    description: 'This is a description of the recent work.'
+    description: <NetworkManagementandVoIP/>
   },
   {
     title: 'Voicemail Management and Network Protocols',
     image: porfolioImage6,
-    description: 'This is a description of the recent work.'
+    description: <VoicemailManagementandNetwork/>
   },
 ];
 
