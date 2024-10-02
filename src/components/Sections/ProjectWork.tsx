@@ -129,11 +129,33 @@ const VoicemailManagementandNetwork : FC = memo(() => (
     </div>
 ));
 
+const AboutMe : FC = memo(() => (
+  <div className="text-stone-100 text-justify" style={{fontSize: '16px'}}>
+      <p>
+        As an <strong className="text-stone-100">SDET</strong>, I specialize in creating automated test frameworks,
+        ensuring that software applications, firmware, and enterprise systems meet rigorous quality standards. My focus
+        spans across functional, security, and performance testing, where I integrate automation to streamline the
+        testing process and improve efficiency. With a deep understanding of cybersecurity principles, I also ensure
+        that products are not only functional but secure, safeguarding against vulnerabilities.
+      </p>
+      <p>
+        In <strong className="text-stone-100">Project and Program Management</strong>, I lead cross-functional teams to
+        successfully deliver complex projects from initiation through execution, ensuring alignment between development,
+        testing, and security. My leadership emphasizes efficient task delegation, resource management, and seamless
+        coordination among stakeholders. With a strong blend of technical expertise and organizational skills, I
+        consistently manage risks, timelines, and expectations to deliver secure, high-quality software solutions. By
+        integrating strategic oversight with communication, I ensure that projects are completed on time, within budget,
+        and meet all technical and business requirements.
+      </p>
+  </div>
+));
+
 export  {
     RecentWork, 
     GamingandInternetServices,
     RouterandNetworkProtocols,
     COEandCDMANetwork,
     NetworkManagementandVoIP,
-    VoicemailManagementandNetwork
+    VoicemailManagementandNetwork,
+    AboutMe
 };

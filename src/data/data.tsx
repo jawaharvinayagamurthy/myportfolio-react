@@ -51,8 +51,19 @@ import {
   RouterandNetworkProtocols,
   COEandCDMANetwork,
   NetworkManagementandVoIP,
-  VoicemailManagementandNetwork
+  VoicemailManagementandNetwork,
+  AboutMe
 } from '../components/Sections/ProjectWork'; 
+
+// 6. Education work
+import {
+  MSCourseWork, 
+  BECourseWork,
+  CertificatePMP,
+  CertificateData,
+  CertificateCyber,
+  CertificateAI
+} from '../components/Sections/Education'; 
 
 /**
  * Page meta data
@@ -96,7 +107,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: `/assets/resume.pdf`,
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -122,24 +133,7 @@ export const AboutComponent = memo(() => {
     return null; // Skip rendering on the server to avoid hydration errors
   }
   return (
-    <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
-        As an <strong className="text-stone-100">SDET</strong>, I specialize in creating automated test frameworks,
-        ensuring that software applications, firmware, and enterprise systems meet rigorous quality standards. My focus
-        spans across functional, security, and performance testing, where I integrate automation to streamline the
-        testing process and improve efficiency. With a deep understanding of cybersecurity principles, I also ensure
-        that products are not only functional but secure, safeguarding against vulnerabilities.
-      </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
-        In <strong className="text-stone-100">Project and Program Management</strong>, I lead cross-functional teams to
-        successfully deliver complex projects from initiation through execution, ensuring alignment between development,
-        testing, and security. My leadership emphasizes efficient task delegation, resource management, and seamless
-        coordination among stakeholders. With a strong blend of technical expertise and organizational skills, I
-        consistently manage risks, timelines, and expectations to deliver secure, high-quality software solutions. By
-        integrating strategic oversight with communication, I ensure that projects are completed on time, within budget,
-        and meet all technical and business requirements.
-      </p>
-    </>
+      <AboutMe/>
   );
 });
 export default AboutComponent;
@@ -151,7 +145,7 @@ export const aboutData: About = {
     {label: 'Experience', text: '25 years', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Asian Indian', Icon: FlagIcon},
     {label: 'Specialization', text: 'SDET, Project/Program Manager', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Texas', Icon: AcademicCapIcon},
+    {label: 'Study', text: 'University of Texas at San Antonio, USA', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'H1B Visa Type', Icon: BuildingOffice2Icon},
   ],
 };
@@ -370,13 +364,40 @@ export const education: TimelineItem[] = [
     date: 'Aug 1995',
     location: 'University of Texas at San Antonio, TX, USA',
     title: 'M.S. Electrical Engineering',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <MSCourseWork/>  
   },
   {
     date: 'May 1990',
     location: 'University of Madras, Chennai, India',
     title: 'B.E. Electronics and Communication',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <BECourseWork/>
+  },
+];
+
+export const certification: TimelineItem[] = [
+  {
+    date: 'April 2024',
+    location: 'Google PMP Certification' ,
+    title: '',
+    content: <CertificatePMP/>
+  },
+  {
+    date: 'June 2024',
+    location: 'IBM - Data Engineering Professional Certification',
+    title: '',
+    content: <CertificateData/> 
+  },
+  {
+    date: 'August 2024',
+    location: 'IBM - Cybersecurity Analyst Professional Certification',
+    title: '',
+    content: <CertificateCyber/> 
+  },
+  {
+    date: 'September 2024',
+    location: 'IBM AI Engineering Professional Certification',
+    title: '',
+    content: <CertificateAI/> 
   },
 ];
 
@@ -386,10 +407,13 @@ export const experience: TimelineItem[] = [
     location: 'California, USA',
     title: 'Senior SDET / Test Architect and Manager',
     content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Testing Process & Automation, Cross-Platform Testing, CI/CD Integration, AI-Driven Testing, 
+        Load & Performance Testing, API Testing & Verification, AWS Lambda & Glue for Automation, 
+        SQL & Database Optimization, Project Management & Leadership, AI & Big Data Expertise
       </p>
+      </div>
     ),
   },
   {
@@ -397,10 +421,128 @@ export const experience: TimelineItem[] = [
     location: 'California, USA',
     title: 'SDET - Firmware and Application',
     content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        White Box Testing, Black Box Testing, Automated Testing, Firmware Testing, Application Testing, 
+        Quality Assurance, Bug Logging, Product Quality Enhancement, Unit Testing, Integration Testing, 
+        Automation Framework Development, Streamlining Testing Processes, Efficiency Improvement, 
+        Build and Release Process, Feature Integration, Production System Integration, Email Monitoring, 
+        Spam Prevention, Regex Formulation, Production Environment Integrity, User Security Enhancement.
       </p>
+      </div>
+    ),
+  },
+  {
+    date: 'Oct 2010 - Jan 2014',
+    location: 'Bengaluru, India',
+    title: 'Senior Project Manager',
+    content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
+      <p>
+        Project Budget Management, Work Order Tracking, Scope Management, Change Request Management, 
+        Project Objectives Definition, Task Estimation, Resource Scheduling, Work-Breakdown Structure, 
+        Risk Management, Requirements Specification, Purchase Order Tracking, Project Reviews, Task 
+        Approval, Status Reporting, Metrics Reporting, Release Management, Product Delivery, Customer 
+        Demonstration, Installation Management, Collaboration with PMO, Vendor Management, Performance 
+        Evaluation, Team Mentoring, Agile Development, SCRUM Master Responsibilities, Application 
+        Feature Development, Design Review, Code Review, Test Case Review, Acceptance Testing, Performance Testing, Team Management.
+      </p>
+      </div>
+    ),
+  },
+  {
+    date: 'Jan 2006 - Sep 2010',
+    location: 'Bengaluru, India',
+    title: 'Senior Project Manager',
+    content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
+      <p>
+      Project budget tracking, work order management, scope management, change request handling, project objective 
+      definition, task estimation, scheduling, resource balancing, project planning, risk management, requirements 
+      specification, purchase order tracking, project execution, task approval, status reporting, release management, 
+      product delivery, issue closure, customer demonstration, PMO collaboration, vendor and partner management, 
+      performance evaluation, mentoring, design and code review, testing, and team management.
+      </p>
+      </div>
+    ),
+  },
+  {
+    date: 'Jan 2005 - Dec 2005',
+    location: 'Mumbai, India',
+    title: 'Technical Project Manager',
+    content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
+      <p>
+      Development and maintenance of infrastructure applications (CDS and GPS in CDMA networks), task estimation, scheduling, 
+      resource balancing, project planning, risk management, requirements specification, project review, task approval, 
+      status reporting, release management, product delivery, issue closure, customer site demonstrations, PMO collaboration, 
+      vendor and partner management, performance evaluation, mentoring, technical support (change requests, bug fixing, testing)
+      for application download servers, location-based servers, transaction managers, group managers, billing systems, and 
+      carrier transaction systems, change request tracking, monitoring, and team management.
+      </p>
+      </div>
+    ),
+  },
+  {
+    date: 'Oct 2002 - Dec 2004',
+    location: 'Chennai, India',
+    title: 'Project Manager',
+    content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
+      <p>
+      Development of infrastructure applications and tools that manage the central office (telecom exchange) for tracking, 
+      monitoring and controlling the switches, routers, servers and other equipment’s / components that are operational / non-operational.
+      </p>
+      </div>
+    ),
+  },
+  {
+    date: 'April 2001 - Sep 2002',
+    location: 'Chennai, India',
+    title: 'Program Manager',
+    content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
+      <p>
+      Development of NMS (Network Management System), COPS (Common Open Policy Service) and VoIP (Voice Over Internet Protocol) 
+      based applications.
+      </p>
+      </div>
+    ),
+  },
+  {
+    date: 'Sep 1999 - March 2001',
+    location: 'Chennai, India',
+    title: 'Software Specialist',
+    content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
+      <p>
+      Development of directory services applications (white pages & yellow pages) for WEB, WAP, SMS and portal end-users. 
+      </p>
+      </div>
+    ),
+  },
+  {
+    date: 'Aug 1997 - Aug 1999',
+    location: 'Chennai, India',
+    title: 'Software Engineer II',
+    content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
+      <p>
+      Development of Voicemail Management System, Home Location Register and VoiceMail Simulator.
+      </p>
+      </div>
+    ),
+  },
+  {
+    date: 'Sep 1995 - July 1997',
+    location: 'Chennai, India',
+    title: 'Software Engineer',
+    content: (
+      <div className="text-black text-justify" style={{fontSize: '13px'}}>
+      <p>
+      Development and testing of ISDN application and products (network terminator, terminal adaptor, feature phone). 
+      </p>
+      </div>
     ),
   },
 ];
@@ -412,18 +554,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'From Manager',
+      text: "Jawahar Vinayagamurthy's exceptional technical expertise and leadership have consistently delivered high-quality results on time, driving our team's success in complex projects.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'From Peer Colleague',
+      text: 'Working alongside Jawahar Vinayagamurthy has been a learning experience, as his problem-solving skills and attention to detail continually raise the bar for our team.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'From Customer',
+      text: "Jawahar Vinayagamurthy's dedication to understanding our needs and delivering innovative solutions has significantly improved our operational efficiency and product quality.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
