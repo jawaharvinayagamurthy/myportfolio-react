@@ -142,3 +142,30 @@ h3 {
   list-style-type: disc; /* Change bullet style */
   padding-left: 20px; /* Optional: adjust padding */
 }
+
+.running-text {
+  width: 100%; /* Make sure it takes full width */
+  overflow: hidden; /* Hide any overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  position: relative; /* Needed for absolute positioning of the text */
+}
+
+.running-text p {
+  display: inline-block; /* Allow the text to be inline */
+  animation: runText 10s linear infinite; /* Animation properties */
+  position: absolute; /* Positioning for the animation */
+}
+
+@keyframes runText {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* End at the left */
+  }
+}
+
+.glow-text {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6),
+               0 0 30px rgba(255, 255, 255, 0.4);
+}

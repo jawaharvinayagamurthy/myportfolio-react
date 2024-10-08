@@ -20,7 +20,8 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 
 // 4. Images (sorted alphabetically)
-import heroImage from '../images/header-background.webp';
+//import heroImage from '../images/header-background.webp';
+import heroImage from '../images/iam-sky.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -28,7 +29,8 @@ import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
 import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
 import profilepic from '../images/profilepic.jpg';
-import testimonialImage from '../images/testimonial.webp';
+import testimonialImage from '../images/testimonial-sky.jpg';
+//import testimonialImage from '../images/testimonial.webp';
 
 // 5. Data definitions and types (sorted alphabetically)
 import {
@@ -100,7 +102,7 @@ export const heroData: Hero = {
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
         <strong className="text-stone-100">Innovative Engineer & Project Leader </strong>
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify glow-text">
         "Engineering AI-driven automated solutions, data science, and machine learning to power the future.”
       </p>
     </>

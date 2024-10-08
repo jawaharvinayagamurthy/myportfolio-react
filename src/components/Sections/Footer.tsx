@@ -16,19 +16,19 @@ const Footer: FC = memo(() => (
       </a>
     </div>
     <div className="flex flex-col items-center gap-y-6">
-      <div className="flex gap-x-4 text-neutral-500">
+      <div className="flex gap-x-4 text-white">
         <Socials />
       </div>
       <a
         className="-m-2 flex items-center gap-x-1 rounded-md p-2 ring-yellow focus:outline-none focus:ring-2"
-        href="https://reactresume.com">
+        href="https://jawaharvinayagamurthy.vercel.app">
         <BoltIcon className="h-5 w-5 text-yellow" />
         <span>
-          Provided by <span className="text-white">React</span>
+          Provided by <span className="text-white">JV's</span>
           <span className="italic text-yellow">Resume</span>
         </span>
       </a>
-      <span className="text-sm text-neutral-700">© Copyright {currentYear} Jawahar Vinayagamurthy</span>
+      <span className="text-sm text-white">© Copyright {currentYear} Jawahar Vinayagamurthy</span>
     </div>
   </div>
 ));

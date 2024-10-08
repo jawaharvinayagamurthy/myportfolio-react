@@ -3,7 +3,7 @@ import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useSt
 
 import {isApple, isMobile} from '../../config';
 import {SectionId, testimonial} from '../../data/data';
-import {Testimonial} from '../../data/dataDef';
+import {TestimonialDef} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
 import useWindow from '../../hooks/useWindow';
 import QuoteIcon from '../Icon/QuoteIcon';
@@ -73,7 +73,7 @@ const Testimonials: FC = memo(() => {
     <Section noPadding sectionId={SectionId.Testimonials}>
       <div
         className={classNames(
-          'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-24 lg:px-8',
+          'flex w-full items-center justify-center bg-cover bg-center px-4 py-16 md:py-10 lg:px-8',
           parallaxEnabled && 'bg-fixed',
           {'bg-neutral-700': !imageSrc},
         )}
@@ -113,7 +113,7 @@ const Testimonials: FC = memo(() => {
   );
 });
 
-const Testimonial: FC<{testimonial: Testimonial; isActive: boolean}> = memo(
+const Testimonial: FC<{testimonial: TestimonialDef; isActive: boolean}> = memo(
   ({testimonial: {text, name, image}, isActive}) => (
     <div
       className={classNames(

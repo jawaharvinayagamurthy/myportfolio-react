@@ -31,9 +31,9 @@ const Portfolio: FC = memo(() => {
   }, [openModal]);
 
   return (
-    <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
+    <Section className="bg-neutral-500" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Explore my project work</h2>
+        <h2 className="self-center text-xl font-bold text-white">Explore My Project Work</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
@@ -45,7 +45,7 @@ const Portfolio: FC = memo(() => {
                     'relative h-[250px] w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}
                 >
-                  <Image alt={title} layout="fill" objectFit="cover" src={image} />
+                  <Image alt={title} fill style={{objectFit: 'cover'}} src={image}/>
                   <ItemOverlay
                     item={item}
                     openModal={() => handleOpenModal(item)} // Use handleOpenModal
