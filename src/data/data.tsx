@@ -171,6 +171,10 @@ export const skills: SkillGroup[] = [
         name: 'API',
         level: 8,
       },
+      {
+        name: 'Smart Glasses',
+        level: 9,
+      },
     ],
   },
   {
@@ -179,6 +183,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'MS Project',
         level: 8,
+      },
+      {
+        name: 'MS Visio',
+        level: 6,
       },
       {
         name: 'JIRA',
@@ -198,7 +206,7 @@ export const skills: SkillGroup[] = [
         level: 7,
       },
       {
-        name: 'Tools - Selenium/Appium/Cucumber',
+        name: 'Tools - Selenium/Appium/Cypress/Cucumber',
         level: 7,
       },
       {
@@ -242,10 +250,6 @@ export const skills: SkillGroup[] = [
         name: 'Maven',
         level: 5,
       },
-      {
-        name: 'BrowserStack/LambdaTest',
-        level: 9,
-      },
     ],
   },
   {
@@ -270,7 +274,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Cloud Computing',
+    name: 'Cloud Computing and Test Tools',
     skills: [
       {
         name: 'AWS',
@@ -283,6 +287,10 @@ export const skills: SkillGroup[] = [
       {
         name: 'MS Azure',
         level: 4,
+      },
+      {
+        name: 'BrowserStack/LambdaTest',
+        level: 9,
       },
     ],
   },
@@ -313,6 +321,18 @@ export const skills: SkillGroup[] = [
       {
         name: 'English',
         level: 10,
+      },
+      {
+        name: 'Tamil',
+        level: 10,
+      },
+      {
+        name: 'Telugu',
+        level: 9,
+      },
+      {
+        name: 'Hindi',
+        level: 5,
       },
       {
         name: 'Spanish',
