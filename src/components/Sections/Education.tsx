@@ -1,9 +1,9 @@
 import React, {FC, memo} from 'react';
 
 const MSCourseWork: FC = memo(() => (
-    <div className="text-black text-justify" style={{fontSize: '13px'}}>
+    <div className="text-justify" style={{fontSize: '13px'}}>
         <div>
-            <h3 className="font-bold">Course Work</h3>
+            <h3 className="text-justify">Course Work</h3>
             <ul className="bullet-list-disc" style={{fontSize: '13px'}}>
                 <li>Digital System Design: Understanding and designing digital systems at both circuit and system levels using HDL languages like Verilog and VHDL.</li>
                 <li>FPGA/ASIC Design: Proficiency in hardware description languages and tools for designing and implementing complex digital systems on FPGAs and ASICs.</li>
@@ -15,7 +15,7 @@ const MSCourseWork: FC = memo(() => (
             </ul>
         </div>
         <div>
-            <h3 className="font-bold">Software and Tools</h3>
+            <h3 className="text-justify">Software and Tools</h3>
             <ul className="bullet-list-disc" style={{fontSize: '13px'}}>
                 <li>MATLAB/Simulink: For signal processing and system-level design.</li>
                 <li>Xilinx Vivado/Altera Quartus: For FPGA design, simulation, and synthesis.</li>
@@ -25,7 +25,7 @@ const MSCourseWork: FC = memo(() => (
             </ul>
         </div>
         <div>
-            <h3 className="font-bold">Course Projects</h3>
+            <h3 className="text-justify">Course Projects</h3>
             <ul className="bullet-list-disc" style={{fontSize: '13px'}}>
                 <li>Processor Design: Designing PDP8 processor using VHDL and fabricating the chip.</li>
                 <li>Automotive Electronics: Building embedded systems for automotive control units.</li>
@@ -37,9 +37,9 @@ const MSCourseWork: FC = memo(() => (
 ));
 
 const BECourseWork: FC = memo(() => (
-    <div className="text-black text-justify" style={{fontSize: '13px'}}>
+    <div className="text-justify" style={{fontSize: '13px'}}>
         <div>
-        <h3 className="font-bold">Course Work</h3>
+        <h3 className="text-justify">Course Work</h3>
             <ul className="bullet-list-disc" style={{fontSize: '13px'}}>
             <li><a href="https://coursera.org/share/6181a21099f086744e48c4c29302ec7e" target="_blank" rel="noopener noreferrer">
                 View my certificate
@@ -47,7 +47,7 @@ const BECourseWork: FC = memo(() => (
             </ul>
         </div>
         <div>
-            <h3 className="font-bold">Course Projects</h3>
+            <h3 className="text-justify">Course Projects</h3>
             <ul className="bullet-list-disc" style={{fontSize: '13px'}}>
                 <li>Processor Design: Arithmetic operation implementation using 8085 assembly language.</li>
             </ul>
