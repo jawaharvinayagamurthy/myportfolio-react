@@ -146,7 +146,7 @@ export const aboutData: About = {
     {label: 'Location', text: 'Mountain House, CA, USA', Icon: MapIcon},
     {label: 'Experience', text: '25 years', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Asian Indian', Icon: FlagIcon},
-    {label: 'Specialization', text: 'SDET, Project/Program Manager', Icon: SparklesIcon},
+    {label: 'Specialization', text: 'Testing / Management', Icon: SparklesIcon},
     {label: 'Study', text: 'University of Texas at San Antonio, USA', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'H1B Visa Type', Icon: BuildingOffice2Icon},
   ],
@@ -399,26 +399,26 @@ export const education: TimelineItem[] = [
 export const certification: TimelineItem[] = [
   {
     date: 'April 2024',
-    location: 'Google PMP Certification' ,
-    title: '',
+    title: 'PMP Certification',
+    location: '',
     content: <CertificatePMP/>
   },
   {
     date: 'June 2024',
-    location: 'IBM - Data Engineering Professional Certification',
-    title: '',
+    title: 'Data Engineering Professional Certification',
+    location: '',
     content: <CertificateData/> 
   },
   {
     date: 'August 2024',
-    location: 'IBM - Cybersecurity Analyst Professional Certification',
-    title: '',
+    title: 'Cybersecurity Analyst Professional Certification',
+    location: '',
     content: <CertificateCyber/> 
   },
   {
     date: 'September 2024',
-    location: 'IBM AI Engineering Professional Certification',
-    title: '',
+    title: 'AI Engineering Professional Certification',
+    location: '',
     content: <CertificateAI/> 
   },
 ];

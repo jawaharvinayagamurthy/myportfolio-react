@@ -41,9 +41,16 @@ const BECourseWork: FC = memo(() => (
         <div>
         <h3 className="text-justify">Course Work</h3>
             <ul className="bullet-list-disc" style={{fontSize: '13px'}}>
-            <li><a href="https://coursera.org/share/6181a21099f086744e48c4c29302ec7e" target="_blank" rel="noopener noreferrer">
-                View my certificate
-            </a></li>
+                <li>Analog Electronics (Diodes, Transistors, Amplifiers, Operational Amplifiers)</li>
+                <li>Digital Electronics (Logic Gates, Flip-Flops, Counters, Memory Devices)</li>
+                <li>Electronic Circuits and Devices (Circuit Design, Analysis, Semiconductor Devices)</li>
+                <li>Signals and Systems (Signal Processing, Fourier Analysis, LTI Systems)</li>
+                <li>Control Systems (Feedback, Stability, System Modeling)</li>
+                <li>Electromagnetic Theory (Electromagnetic Fields, Waves, Transmission Lines)</li>
+                <li>Microprocessors and Microcontrollers (8085, 8086, ARM Architecture)</li>
+                <li>Communication Systems (AM/FM, Modulation Techniques, Signal Transmission)</li>
+                <li>Digital Signal Processing (Sampling, Filters, FFT)</li>
+                <li>Network Theory (Circuit Theorems, Network Analysis, AC/DC Circuits)</li>
             </ul>
         </div>
         <div>

@@ -132,20 +132,23 @@ const VoicemailManagementandNetwork : FC = memo(() => (
 const AboutMe : FC = memo(() => (
   <div className="text-stone-100 text-justify" style={{fontSize: '16px'}}>
       <p>
-        As an <strong className="text-stone-100">SDET</strong>, I specialize in creating automated test frameworks,
-        ensuring that software applications, firmware, and enterprise systems meet rigorous quality standards. My focus
-        spans across functional, security, and performance testing, where I integrate automation to streamline the
-        testing process and improve efficiency. With a deep understanding of cybersecurity principles, I also ensure
-        that products are not only functional but secure, safeguarding against vulnerabilities.
+        In <strong className="text-stone-100">Testing and Automation</strong>, I am dedicated to elevating quality 
+        engineering through the development of innovative testing frameworks that harmoniously integrate manual 
+        and automated testing methodologies. With a strong foundation in functional, security, and performance 
+        testing, I leverage cutting-edge AI-driven tools and ETL-based testing for data-centric applications, 
+        ensuring not only flawless functionality but also the integrity and reliability of data. My commitment 
+        to cybersecurity empowers me to safeguard products against vulnerabilities, ensuring that every application 
+        I work on is not only high-performing but also resilient and secure.
       </p>
       <p>
-        In <strong className="text-stone-100">Project and Program Management</strong>, I lead cross-functional teams to
-        successfully deliver complex projects from initiation through execution, ensuring alignment between development,
-        testing, and security. My leadership emphasizes efficient task delegation, resource management, and seamless
-        coordination among stakeholders. With a strong blend of technical expertise and organizational skills, I
-        consistently manage risks, timelines, and expectations to deliver secure, high-quality software solutions. By
-        integrating strategic oversight with communication, I ensure that projects are completed on time, within budget,
-        and meet all technical and business requirements.
+        In <strong className="text-stone-100">Project and Program Management</strong>, I excel in transforming 
+        complex challenges into streamlined successes. Leading cross-functional teams, I orchestrate project 
+        lifecycles from inception to completion, ensuring seamless collaboration between development, testing, 
+        and security. My leadership is characterized by strategic foresight, effective delegation, and a focus 
+        on cultivating a collaborative culture that drives innovation. By adeptly managing risks, timelines, and 
+        stakeholder expectations, I consistently deliver high-quality software solutions that not only meet but 
+        exceed technical and business objectives. Through strategic communication and oversight, I ensure that 
+        projects are completed on time, within budget, and achieve lasting impact.
       </p>
   </div>
 ));
