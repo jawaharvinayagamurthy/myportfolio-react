@@ -31,7 +31,7 @@ const Portfolio: FC = memo(() => {
   }, [openModal]);
 
   return (
-    <Section className="bg-neutral-500" sectionId={SectionId.Portfolio}>
+    <Section className="bg-neutral-500 rounded-3xl" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
         <h2 className="self-center text-xl font-bold text-white">Explore My Project Work</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

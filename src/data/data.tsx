@@ -15,9 +15,9 @@ import {
 
 // 3. Custom components (sorted alphabetically)
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 
 // 4. Images (sorted alphabetically)
 import heroImage from '../images/iam-sky.jpg';
@@ -111,11 +111,11 @@ export const heroData: Hero = {
       primary: true,
       Icon: ArrowDownTrayIcon,
     },
-    {
+    /*{
       href: `#${SectionId.Contact}`,
       text: 'Contact',
       primary: false,
-    },
+    },*/
   ],
 };
 
@@ -608,9 +608,9 @@ export const contact: ContactSection = {
       href: 'https://www.google.ca/maps/place/Mountain-House,+CA,+USA/@37.74605,-121.54335,14z',
     },
     {
-      type: ContactType.Instagram,
+      type: ContactType.LinkedIn,
       text: '@jawaharvinayagamurthy',
-      href: 'https://www.instagram.com/jawaharvinayagamurthy/',
+      href: 'https://www.linkedin.com/in/jawahar-vinayagamurthy-660770103/',
     },
     {
       type: ContactType.Github,
@@ -627,6 +627,6 @@ export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/jawaharvinayagamurthy'},
   //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/jawahar-vinayagamurthy-660770103/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/jawaharvinayagamurthy'},
+  //{label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  //{label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/jawaharvinayagamurthy'},
 ];
