@@ -165,8 +165,23 @@ h3 {
     transform: translateX(-100%); /* End at the left */
   }
 }
-
-.glow-text {
+/*
+.glow-text-white {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6),
                0 0 30px rgba(255, 255, 255, 0.4);
+}*/
+.glow-text {
+  text-shadow: 
+    0 0 10px rgba(255, 0, 0, 0.8),   /* Red with 80% opacity */
+    0 0 20px rgba(255, 0, 0, 0.6),   /* Red with 60% opacity */
+    0 0 30px rgba(255, 0, 0, 0.4);   /* Red with 40% opacity */
+}
+.glow-text-yellow {
+  text-shadow: 
+    0 0 10px rgba(255, 255, 0, 0.8),   /* Yellow with 80% opacity */
+    0 0 20px rgba(255, 255, 0, 0.6),   /* Yellow with 60% opacity */
+    0 0 30px rgba(255, 255, 0, 0.4);   /* Yellow with 40% opacity */
+}
+.text-gold {
+  color: #FFD700; /* Gold color */
 }

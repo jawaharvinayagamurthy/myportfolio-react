@@ -37,8 +37,8 @@ const DesktopNav: FC<{navSections: SectionId[]; currentSection: SectionId | null
     const activeClass = classNames(baseClass, 'text-green-500');
     const inactiveClass = classNames(baseClass, 'text-neutral-100');
     return (
-      <header className="fixed top-0 z-50 hidden w-full bg-neutral-900/50 p-6 backdrop-blur sm:block" id={headerID}>
-        <nav className="flex justify-center gap-x-12">
+      <header className="fixed top-0 z-30 hidden w-full bg-neutral-900/50 p-6 backdrop-blur sm:block" id={headerID}>
+        <nav className="flex justify-center gap-x-20">
           {navSections.map(section => (
             <NavItem
               activeClass={activeClass}

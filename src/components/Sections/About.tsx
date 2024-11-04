@@ -20,7 +20,7 @@ const About: FC = memo(() => {
         <div className={classNames('col-span-1 flex flex-col gap-y-1', {'md:col-span-3': !!profileImageSrc})}>
           <div className="flex flex-col">
             <h2 className="text-xl font-bold text-white">About Me</h2>
-            <p className="prose prose-sm text-gray-300 sm:prose-base">{description}</p>
+            <p className="prose prose-sm text-gray-300 sm:prose-base max-w-full">{description}</p>
           </div>
           <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {aboutItems.map(({label, text, Icon}, idx) => (

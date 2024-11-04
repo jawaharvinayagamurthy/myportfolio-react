@@ -20,7 +20,6 @@ import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 
 // 4. Images (sorted alphabetically)
-//import heroImage from '../images/header-background.webp';
 import heroImage from '../images/iam-sky.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
@@ -97,15 +96,13 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 export const heroData: Hero = {
   imageSrc: heroImage,
   name: `I'm Jawahar Vinayagamurthy`,
-  description: (
-    <>
+  description: (<>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify">
-        <strong className="text-stone-100">Innovative Engineer & Project Leader </strong>
+        <strong className="text-gold">Innovative Engineer & Project Leader </strong>
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-justify glow-text">
         "Engineering AI-driven automated solutions, data science, and machine learning to power the future.”
-      </p>
-    </>
+      </p></>
   ),
   actions: [
     {
