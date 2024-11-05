@@ -10,12 +10,12 @@ const Resume: FC = memo(() => {
   return (
     <Section className="bg-neutral-100 rounded-3xl" sectionId={SectionId.Resume}>
       <div className="flex flex-col divide-y-2 divide-neutral-300">
-        <ResumeSection title="Work">
+        <ResumeSection title="Experience">
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
-        <ResumeSection title="Skills">
+        <ResumeSection title="Competencies">
           <p className="pb-8" style={{fontSize: '13px'}}>
             Each skill is rated on a scale from 1 to 10, where 1 indicates basic familiarity and 10 represents
             expert-level mastery. The ratings reflect both my hands-on experience and depth of knowledge in each area,
@@ -27,12 +27,12 @@ const Resume: FC = memo(() => {
             ))}
           </div>
         </ResumeSection>
-        <ResumeSection title="Education">
+        <ResumeSection title="Academics">
           {education.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
-        <ResumeSection title="Certifications">
+        <ResumeSection title="Accreditations">
           {certification.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`}/>
           ))}

@@ -52,14 +52,7 @@ const PortfolioModal: FC<PortfolioModalProps> = memo(({isOpen, onClose, item, is
 });
 
 export default PortfolioModal;
-/*
-<p className="mb-4 text-gray-700">{description}</p>
-className="mb-4 text-gray-700 max-h-60 overflow-y-auto"
-<div
-          className="mb-4 text-gray-700"
-          dangerouslySetInnerHTML={{ __html: description }}
-        />
-*/
+
 
 
 

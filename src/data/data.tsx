@@ -45,7 +45,7 @@ import {
   TimelineItem,
 } from './dataDef';
 
-// 6. Project work
+// 6. Project Portfolio
 import {
   RecentWork, 
   GamingandInternetServices,
@@ -56,7 +56,7 @@ import {
   AboutMe
 } from '../components/Sections/ProjectWork'; 
 
-// 6. Education work
+// 6. Academics
 import {
   MSCourseWork, 
   BECourseWork,
@@ -65,6 +65,20 @@ import {
   CertificateCyber,
   CertificateAI
 } from '../components/Sections/Education'; 
+
+// 7. Experience
+import { 
+  Experience1,
+  Experience10,
+  Experience2,
+  Experience3,
+  Experience4,
+  Experience5,
+  Experience6,
+  Experience7,
+  Experience8,
+  Experience9
+ } from '../components/Sections/Experience';
 
 /**
  * Page meta data
@@ -79,10 +93,10 @@ export const homePageMeta: HomepageMeta = {
  */
 export const SectionId = {
   Hero: 'hero',
-  About: 'about',
-  Contact: 'contact',
-  Portfolio: 'portfolio',
-  Resume: 'resume',
+  About: 'overview',
+  Contact: 'reachMe',
+  Portfolio: 'projects',
+  Resume: 'experience',
   Skills: 'skills',
   Stats: 'stats',
   Testimonials: 'testimonials',
@@ -425,144 +439,68 @@ export const experience: TimelineItem[] = [
     date: 'Dec 2014 - Present',
     location: 'California, USA',
     title: 'Senior SDET / Test Architect and Manager',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-        Testing Process & Automation, Cross-Platform Testing, CI/CD Integration, AI-Driven Testing, 
-        Load & Performance Testing, API Testing & Verification, AWS Lambda & Glue for Automation, 
-        SQL & Database Optimization, Project Management & Leadership, AI & Big Data Expertise
-      </p>
-      </div>
-    ),
+    content: <Experience1/>,
   },
   {
     date: 'Jan 2014 - Dec 2014',
     location: 'California, USA',
     title: 'SDET - Firmware and Application',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-        White Box Testing, Black Box Testing, Automated Testing, Firmware Testing, Application Testing, 
-        Quality Assurance, Bug Logging, Product Quality Enhancement, Unit Testing, Integration Testing, 
-        Automation Framework Development, Streamlining Testing Processes, Efficiency Improvement, 
-        Build and Release Process, Feature Integration, Production System Integration, Email Monitoring, 
-        Spam Prevention, Regex Formulation, Production Environment Integrity, User Security Enhancement.
-      </p>
-      </div>
-    ),
+    content: <Experience2/>,
   },
   {
     date: 'Oct 2010 - Jan 2014',
     location: 'Bengaluru, India',
     title: 'Senior Project Manager',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-        Project Budget Management, Work Order Tracking, Scope Management, Change Request Management, 
-        Project Objectives Definition, Task Estimation, Resource Scheduling, Work-Breakdown Structure, 
-        Risk Management, Requirements Specification, Purchase Order Tracking, Project Reviews, Task 
-        Approval, Status Reporting, Metrics Reporting, Release Management, Product Delivery, Customer 
-        Demonstration, Installation Management, Collaboration with PMO, Vendor Management, Performance 
-        Evaluation, Team Mentoring, Agile Development, SCRUM Master Responsibilities, Application 
-        Feature Development, Design Review, Code Review, Test Case Review, Acceptance Testing, Performance Testing, Team Management.
-      </p>
-      </div>
-    ),
+    content: <Experience3/>,
   },
   {
     date: 'Jan 2006 - Sep 2010',
     location: 'Bengaluru, India',
     title: 'Senior Project Manager',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-      Project budget tracking, work order management, scope management, change request handling, project objective 
-      definition, task estimation, scheduling, resource balancing, project planning, risk management, requirements 
-      specification, purchase order tracking, project execution, task approval, status reporting, release management, 
-      product delivery, issue closure, customer demonstration, PMO collaboration, vendor and partner management, 
-      performance evaluation, mentoring, design and code review, testing, and team management.
-      </p>
-      </div>
-    ),
+    content: <Experience4/>,
+
   },
   {
     date: 'Jan 2005 - Dec 2005',
     location: 'Mumbai, India',
     title: 'Technical Project Manager',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-      Development and maintenance of infrastructure applications (CDS and GPS in CDMA networks), task estimation, scheduling, 
-      resource balancing, project planning, risk management, requirements specification, project review, task approval, 
-      status reporting, release management, product delivery, issue closure, customer site demonstrations, PMO collaboration, 
-      vendor and partner management, performance evaluation, mentoring, technical support (change requests, bug fixing, testing)
-      for application download servers, location-based servers, transaction managers, group managers, billing systems, and 
-      carrier transaction systems, change request tracking, monitoring, and team management.
-      </p>
-      </div>
-    ),
+    content: <Experience5/>,
+
   },
   {
     date: 'Oct 2002 - Dec 2004',
     location: 'Chennai, India',
     title: 'Project Manager',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-      Development of infrastructure applications and tools that manage the central office (telecom exchange) for tracking, 
-      monitoring and controlling the switches, routers, servers and other equipment’s / components that are operational / non-operational.
-      </p>
-      </div>
-    ),
+    content: <Experience6/>,
+
   },
   {
     date: 'April 2001 - Sep 2002',
     location: 'Chennai, India',
     title: 'Program Manager',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-      Development of NMS (Network Management System), COPS (Common Open Policy Service) and VoIP (Voice Over Internet Protocol) 
-      based applications.
-      </p>
-      </div>
-    ),
+    content: <Experience7/>,
+
   },
   {
     date: 'Sep 1999 - March 2001',
     location: 'Chennai, India',
     title: 'Software Specialist',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-      Development of directory services applications (white pages & yellow pages) for WEB, WAP, SMS and portal end-users. 
-      </p>
-      </div>
-    ),
+    content: <Experience8/>,
+
   },
   {
     date: 'Aug 1997 - Aug 1999',
     location: 'Chennai, India',
     title: 'Software Engineer II',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-      Development of Voicemail Management System, Home Location Register and VoiceMail Simulator.
-      </p>
-      </div>
-    ),
+    content: <Experience9/>,
+
   },
   {
     date: 'Sep 1995 - July 1997',
     location: 'Chennai, India',
     title: 'Software Engineer',
-    content: (
-      <div className="text-black text-justify" style={{fontSize: '13px'}}>
-      <p>
-      Development and testing of ISDN application and products (network terminator, terminal adaptor, feature phone). 
-      </p>
-      </div>
-    ),
+    content: <Experience10/>,
+
   },
 ];
 
@@ -594,7 +532,7 @@ export const testimonial: TestimonialSection = {
  * Contact section
  */
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
+  headerText: 'ReachMe',
   description: 'Connect with me for collaboration, opportunities, or to discuss my work!',
   items: [
     {
