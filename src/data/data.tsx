@@ -360,12 +360,12 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Recent Work',
     image: porfolioImage1,
-    description: <RecentWork />
+    description: <RecentWork/>
   },
   {
     title: 'Gaming and Internet Services',
     image: porfolioImage2,
-    description:<GamingandInternetServices />
+    description:<GamingandInternetServices/>
   },
   {
     title: 'Router and Network Protocols',

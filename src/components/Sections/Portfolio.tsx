@@ -32,8 +32,8 @@ const Portfolio: FC = memo(() => {
 
   return (
     <Section className="bg-gray-500 rounded-3xl" sectionId={SectionId.Portfolio}>
-      <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl font-bold text-white">Project Portfolio</h2>
+      <div className="flex flex-col gap-y-6">
+        <h2 className="text-xl font-bold text-white mt-0">Project Portfolio</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
@@ -42,7 +42,7 @@ const Portfolio: FC = memo(() => {
               <div className="relative" key={`${title}-${index}`}>
                 <div
                   className={classNames(
-                    'relative h-[250px] w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
+                    'relative h-[140px] w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
                   )}
                 >
                   <Image alt={title} fill style={{objectFit: 'cover'}} src={image}/>
