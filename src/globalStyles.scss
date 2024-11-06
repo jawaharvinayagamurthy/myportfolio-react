@@ -185,3 +185,12 @@ h3 {
 .text-gold {
   color: #FFD700; /* Gold color */
 }
+
+.tiled-background {
+  background-image: url('images/iam-sky.jpg'); /* Change the path to your image */
+  background-repeat: repeat; /* This makes the background repeat */
+  background-size: auto; /* Optional: Adjusts size if needed, can also use 'contain' or 'cover' */
+  /* Other properties */
+  height: 100vh; /* Adjust height as needed */
+  width: 100%; /* Adjust width as needed */
+}

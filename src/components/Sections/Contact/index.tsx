@@ -29,7 +29,7 @@ const {actions} = heroData;
 const Contact: FC = memo(() => {
   const {headerText, description, items} = contact;
   return (
-    <Section className="bg-neutral-800 rounded-full" sectionId={SectionId.Contact}>
+    <Section className="bg-green-800/30 rounded-full" sectionId={SectionId.Contact}>
       <div className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-center">
           <EnvelopeIcon className="hidden h-10 w-10 text-white md:block" />
@@ -40,7 +40,7 @@ const Contact: FC = memo(() => {
             <ContactForm />
           </div>
           <div className="order-1 col-span-1 flex flex-col gap-y-6 md:order-2">
-            <p className="prose leading-6 text-neutral-300">{description}</p>
+            <p className="prose leading-6 text-neutral-100">{description}</p>
             <dl className="flex flex-col space-y-4 text-base text-neutral-500 sm:space-y-2">
               {items.map(({type, text, href}) => {
                 const {Icon, srLabel} = ContactValueMap[type];
@@ -50,7 +50,7 @@ const Contact: FC = memo(() => {
                     <dd className="flex items-center">
                       <a
                         className={classNames(
-                          '-m-2 flex rounded-md p-2 text-neutral-300 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500',
+                          '-m-2 flex rounded-md p-2 text-neutral-100 hover:text-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500',
                           {'hover:text-white': href},
                         )}
                         href={href}
@@ -64,8 +64,8 @@ const Contact: FC = memo(() => {
               })}
               <div className="flex w-full justify-center gap-x-4"> {actions.map(({href, text, primary, Icon}) => (
                 <a className={classNames(
-                'flex rounded-full border-2 bg-stone-900 text-sm mt-20 px-10 py-2 font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base ml-auto',
-                primary ? 'border-orange-500 ring-orange-500' : 'border-white ring-white')}
+                'flex rounded-full border-2 bg-stone-500 text-sm mt-20 px-10 py-2 font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base ml-auto',
+                primary ? 'border-green-500 ring-orange-500' : 'border-white ring-white')}
                   href={href}
                   key={text}>
                   {text}

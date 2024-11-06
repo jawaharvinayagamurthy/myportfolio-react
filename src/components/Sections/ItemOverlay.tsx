@@ -14,7 +14,7 @@ const ItemOverlay: FC<ItemOverlayProps> = memo(({openModal, title}) => {
       <h3 className="text-white font-semibold mb-2 text-center">{title}</h3> {/* Display title */}
       <button className="text-white font-semibold bg-blue-500 rounded px-4 py-2 transition duration-300 hover:bg-blue-600"
         onClick={openModal}>
-        View Details
+        Details
       </button>
     </div>
   );
