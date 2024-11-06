@@ -32,7 +32,7 @@ const Contact: FC = memo(() => {
     <Section className="bg-green-800/30 rounded-full" sectionId={SectionId.Contact}>
       <div className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-center">
-          <EnvelopeIcon className="hidden h-10 w-10 text-white md:block" />
+          <EnvelopeIcon className="hidden h-8 w-10 text-gray md:block" />
           <h2 className="text-xl font-bold text-white">{headerText}</h2>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
