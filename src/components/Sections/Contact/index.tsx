@@ -29,7 +29,7 @@ const {actions} = heroData;
 const Contact: FC = memo(() => {
   const {headerText, description, items} = contact;
   return (
-    <Section className="bg-green-800/30 rounded-full" sectionId={SectionId.Contact}>
+    <Section className="bg-gray-500 rounded-full" sectionId={SectionId.Contact}>
       <div className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-6 md:flex-row md:items-center">
           <EnvelopeIcon className="hidden h-8 w-10 text-gray md:block" />
@@ -64,12 +64,12 @@ const Contact: FC = memo(() => {
               })}
               <div className="flex w-full justify-center gap-x-4"> {actions.map(({href, text, primary, Icon}) => (
                 <a className={classNames(
-                'flex rounded-full border-2 bg-stone-500 text-sm mt-20 px-10 py-2 font-medium text-white ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base ml-auto',
+                'flex w-max mt-8 mr-auto rounded-full border-2 border-blue-500 bg-blue-500 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-gray-700/80 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800',
                 primary ? 'border-green-500 ring-orange-500' : 'border-white ring-white')}
                   href={href}
                   key={text}>
                   {text}
-                  {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
+                  {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6 ml-4"/>}
                 </a>))}
               </div>
             </dl>
@@ -83,3 +83,4 @@ const Contact: FC = memo(() => {
 
 Contact.displayName = 'About';
 export default Contact;
+{/*'flex rounded-full border-2 border-blue-500 bg-blue-500 text-sm font-medium text-white mt-20 px-4 py-2 ring-offset-gray-700/80 hover:bg-gray-700/80 focus:outline-none focus:ring-2 focus:ring-offset-2 sm:text-base ml-auto',*/}

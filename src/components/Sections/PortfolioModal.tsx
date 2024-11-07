@@ -32,8 +32,7 @@ const PortfolioModal: FC<PortfolioModalProps> = memo(({isOpen, onClose, item, is
       }}
     >
         <div className="flex flex-col items-center p-4">
-            <h2 className="mb-4 text-xl font-bold"
-                style={{width: '100%', padding: '10px', border: '2px solid #ccc'}}>
+            <h2 className="mb-4 text-xl font-bold" style={{width: '100%', padding: '10px', border: '2px solid #ccc'}}>
             {title}</h2>
         <div
             className="mb-4 text-gray-700 overflow-y-auto"  // Add scrollable container

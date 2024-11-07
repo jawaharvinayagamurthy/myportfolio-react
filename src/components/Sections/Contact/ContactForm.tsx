@@ -69,7 +69,7 @@ const ContactForm: FC = memo(() => {
   );
 
   const inputClasses =
-    'bg-stone-500 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
+    'bg-white/50 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
 
   const Modal = ({ message, onClose }: { message: string; onClose: () => void }) => (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -116,9 +116,8 @@ const ContactForm: FC = memo(() => {
           />
           <button
             aria-label="Submit contact form"
-            className="w-max rounded-full border-2 border-green-600 bg-stone-500 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-gray-700/80 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
-            type="submit"
-          >
+            className="w-max ml-5 rounded-full border-2 border-blue-500 bg-blue-500 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-gray-700/80 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800"
+            type="submit">
             Send Message
           </button>
         </form>

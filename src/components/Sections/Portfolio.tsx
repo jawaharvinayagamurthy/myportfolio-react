@@ -37,20 +37,17 @@ const Portfolio: FC = memo(() => {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {portfolioItems.map((item, index) => {
             const {title, image} = item;
-
             return (
               <div className="relative" key={`${title}-${index}`}>
                 <div
                   className={classNames(
                     'relative h-[140px] w-full overflow-hidden rounded-lg shadow-lg shadow-black/30 lg:shadow-xl',
-                  )}
-                >
+                  )}>
                   <Image alt={title} fill style={{objectFit: 'cover'}} src={image}/>
                   <ItemOverlay
                     item={item}
-                    openModal={() => handleOpenModal(item)} // Use handleOpenModal
-                    title={title}
-                  />
+                    openModal={() => handleOpenModal(item)} 
+                    title={title}/>
                 </div>
               </div>
             );
@@ -70,6 +67,5 @@ const Portfolio: FC = memo(() => {
 
 Portfolio.displayName = 'Portfolio';
 export default Portfolio;
-//<ItemOverlay item={item} openModal={() => openModal(item)} title={title} /> {/* Pass the title as well */}
 
 
