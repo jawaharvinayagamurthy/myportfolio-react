@@ -69,7 +69,7 @@ const ContactForm: FC = memo(() => {
   );
 
   const inputClasses =
-    'bg-white/50 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-neutral-400 placeholder:text-sm text-neutral-200 text-sm';
+    'bg-white/50 border-0 focus:border-0 focus:outline-none focus:ring-1 focus:ring-orange-600 rounded-md placeholder:text-black-400 placeholder:text-sm text-black-200 text-sm';
 
   const Modal = ({ message, onClose }: { message: string; onClose: () => void }) => (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
@@ -84,7 +84,7 @@ const ContactForm: FC = memo(() => {
 
   return (
       <>
-        <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
+        <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage} style={{color: "black"}}>
           <input
             className={inputClasses}
             name="name"
@@ -93,6 +93,7 @@ const ContactForm: FC = memo(() => {
             placeholder="Name"
             required
             type="text"
+            style={{color: "black"}}
           />
           <input
             autoComplete="email"
@@ -103,6 +104,7 @@ const ContactForm: FC = memo(() => {
             placeholder="Email"
             required
             type="email"
+            style={{color: "black"}}
           />
           <textarea
             className={inputClasses}
@@ -111,6 +113,7 @@ const ContactForm: FC = memo(() => {
             onChange={onChange}
             value={data.message}
             placeholder="Message"
+            style={{color: "black"}}
             required
             rows={6}
           />
